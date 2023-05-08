@@ -210,6 +210,23 @@ const PassStyled = styled.div`
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .btn-login {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+
+  input {
+    border: none;
+    outline: none;
+  }
 `;
 
 export default ResetPassword;
