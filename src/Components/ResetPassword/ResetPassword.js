@@ -70,7 +70,7 @@ function ResetPassword({ setShowResetPassword, setShowLogin }) {
           </form>
           <button className="btn-login" onClick={() => setShowLogin(true)}>
             <img src={icon} alt="กลับ" />
-          </button>
+        </button>
         </div>
       </div>
     </PassStyled>
