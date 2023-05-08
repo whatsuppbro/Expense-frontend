@@ -173,7 +173,7 @@ align-items: center;
 .input-user,
 .input-email, 
 .input-pass, 
-.input-image,{
+.input-image{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
   padding: 0.5em;
