@@ -45,9 +45,11 @@ function Login({ setIsLoggedIn, setShowLogin }) {
         setIsLoggedIn(true);
         alert(`Login Success. Welcome ${data.user.name}!`);
       } else if (response.status === 404) {
-        alert("User Not Found");
-      } else {
-        alert("Login Failed");
+        alert("ไม่พบผู้ใช้นี้");
+      } else if (response.status === 400){
+        alert("รหัสผ่านไม่ถูก");
+      } else{
+        alert("ไม่สามารถล็อกอินได้");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -197,19 +199,19 @@ const LoginStyled = styled.div`
     text-decoration: underline;
   }
 
-  .btn-forgot-password{
+  .btn-forgot-password {
     font-family: "Noto Sans Thai", sans-serif;
     font-size: 0.8em;
-    text-align: center;
     background: none;
     border: none;
     color: #111;
-    position: absolute;
-    bottom: 15px;
-    right: 0;
     padding: 0;
     cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
   }
+  
 
   .btn-forgot-password:hover {
     color: #005f9a;

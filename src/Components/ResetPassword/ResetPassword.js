@@ -68,7 +68,7 @@ function ResetPassword({ setShowResetPassword, setShowLogin }) {
             </div>
             <button className="btn-change" type="submit">ยืนยัน</button>
           </form>
-          <button className="btn-login" onClick={() => setShowLogin(true)}>
+          <button className="btn-login" onClick={() => { setShowLogin(true); setShowResetPassword(false); }}>
             <img src={icon} alt="กลับ" />
         </button>
         </div>
