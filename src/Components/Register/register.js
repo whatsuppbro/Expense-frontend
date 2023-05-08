@@ -185,21 +185,8 @@ const RegisterStyled = styled.div`
     outline: none;
   }
 
-  .container-from {
-    background: #f1f7fe;
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 2em;
-    flex-content: flex-end;
-    position: relative;
-    width: 500px;
-    max-width: 100%;
-    align-item: center;
-  }
-
-  .btn-register {
+  .btn-register,
+  .btn-login {
     font-family: "Noto Sans Thai", sans-serif;
     background-color: #fbeee0;
     border: 2px solid #422800;
@@ -220,6 +207,21 @@ const RegisterStyled = styled.div`
     width: 48%;
     margin: 0;
   }
+
+  .container-from {
+    background: #f1f7fe;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 2em;
+    flex-content: flex-end;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    align-item: center;
+  }
+
 
   .btn-change:hover,
   .btn-register:hover {
@@ -255,28 +257,6 @@ const RegisterStyled = styled.div`
 
   button:last-of-type {
     margin-top: 20px;
-  }
-
-  .btn-login {
-    font-family: "Noto Sans Thai", sans-serif;
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 80%;
-    margin-left: 10%;
   }
 
   .button-container {
