@@ -8,6 +8,7 @@ function Login({ setIsLoggedIn, setShowLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showResetPassword, setShowResetPassword] = useState(false);
+  const token = localStorage.getItem("token");
 
   if (showResetPassword) {
     return (

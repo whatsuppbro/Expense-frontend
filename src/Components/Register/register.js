@@ -10,6 +10,7 @@ function Register({ setIsRegistered, setShowLogin }) {
   const [password, setPassword] = useState("");
   const [avatar, setAvatar] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
