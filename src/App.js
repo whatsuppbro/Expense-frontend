@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo} from 'react';
 import styled from 'styled-components';
 import bg from './img/bg.png';
 import { MainLayout } from './styles/Layouts';
@@ -20,7 +20,7 @@ function App() {
   const onSignOut = () => {
     localStorage.removeItem("name");
     localStorage.removeItem("avatar");
-    
+    localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
   };
 
@@ -43,21 +43,6 @@ function App() {
         return <Dashboard />;
     }
   };
-
-  useEffect(() => {
-    const handleOnUnload = () => {
-      if (!isLoggedIn) {
-        localStorage.removeItem("name");
-        localStorage.removeItem("avatar");
-      }
-    };
-
-    window.addEventListener("beforeunload", handleOnUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleOnUnload);
-    };
-  }, [isLoggedIn]);
 
   if (!isLoggedIn) {
     return (
