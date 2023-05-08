@@ -10,7 +10,6 @@ function Register({ setIsRegistered, setShowLogin }) {
   const [password, setPassword] = useState("");
   const [avatar, setAvatar] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +50,7 @@ function Register({ setIsRegistered, setShowLogin }) {
       <div className="container">
         <div className="container-from">
           <form className="register-sub" onSubmit={handleSubmit}>
-          <img className="register-image" src={logo} alt="สมัครสมาชิก" />
+            <img className="register-image" src={logo} alt="สมัครสมาชิก" />
             <h1 className="register-text">สมัครสมาชิก</h1>
             <div className="input-user">
               <input
@@ -90,13 +89,18 @@ function Register({ setIsRegistered, setShowLogin }) {
               />
             </div>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
-            <button className="btn-register" type="submit">
-              สมัคร
-            </button>
+            <div className="button-container">
+                <button className="btn-register" type="submit">
+                  สมัคร
+                </button>
+                <button
+                  className="btn-login"
+                  onClick={() => setShowLogin(true)}
+                >
+                  กลับ
+                </button>
+              </div>
           </form>
-          <button className="btn-login" onClick={() => setShowLogin(true)}>
-            กลับ
-          </button>
         </div>
       </div>
     </RegisterStyled>
@@ -104,7 +108,7 @@ function Register({ setIsRegistered, setShowLogin }) {
 }
 
 const RegisterStyled = styled.div`
-  font-family: 'Noto Sans Thai', sans-serif;
+  font-family: "Noto Sans Thai", sans-serif;
   height: 100vh;
   background-image: url(${(props) => props.bg});
   position: relative;
@@ -130,10 +134,15 @@ const RegisterStyled = styled.div`
     margin-bottom: 10px;
   }
 
-  .register-sub{
+  .register-sub {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .container {
@@ -192,7 +201,7 @@ const RegisterStyled = styled.div`
   }
 
   .btn-register {
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: "Noto Sans Thai", sans-serif;
     background-color: #fbeee0;
     border: 2px solid #422800;
     border-radius: 30px;
@@ -248,8 +257,8 @@ const RegisterStyled = styled.div`
     margin-top: 20px;
   }
 
-  .btn-login{
-    font-family: 'Noto Sans Thai', sans-serif;
+  .btn-login {
+    font-family: "Noto Sans Thai", sans-serif;
     background-color: #fbeee0;
     border: 2px solid #422800;
     border-radius: 30px;
