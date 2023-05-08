@@ -173,7 +173,7 @@ align-items: center;
 .input-user{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -186,7 +186,7 @@ align-items: center;
 .input-email{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -199,7 +199,7 @@ align-items: center;
 .input-pass{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -212,7 +212,7 @@ align-items: center;
 .input-image{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
-  padding: 0.5em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
