@@ -4,7 +4,7 @@ import bg from "../../img/bg.png";
 import logo from "../../img/logo.png";
 import icon from "../../img/previous.png";
 
-function ResetPassword({ setShowResetPassword }) {
+function ResetPassword({ setShowResetPassword, setShowLogin }) {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
