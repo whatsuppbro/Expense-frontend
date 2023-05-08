@@ -108,150 +108,135 @@ function Register({ setIsRegistered, setShowLogin }) {
 }
 
 const RegisterStyled = styled.div`
-  font-family: "Noto Sans Thai", sans-serif;
-  height: 100vh;
-  background-image: url(${(props) => props.bg});
-  position: relative;
+font-family: "Noto Sans Thai", sans-serif;
+height: 100vh;
+background-image: url(${(props) => props.bg});
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+
+.pass-image {
+  width: 100%;
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pass-text {
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pass-sub {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
 
-  .register-image {
-    width: 100%;
-    max-width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 1em;
+}
 
-  .register-text {
-    text-align: center;
-  }
+.container {
+  background-color: #f1f7fe;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+}
 
-  .error-message {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.container-from {
+  background: #f1f7fe;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  gap: 2em;
+  flex-content: flex-end;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  align-item: center;
+}
 
-  .register-sub {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.input-user,
+.input-email {,
+.input-pass {,
+.input-image,{
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: 1em;
+  border: none;
+  outline: none;
+}
 
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 1em;
-  }
+.btn-register,
+.btn-login {
+  font-family: "Noto Sans Thai", sans-serif;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 48%;
+  margin: 0;
+}
 
-  .container {
-    background-color: #f1f7fe;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 0 0 2em #e6e9f9;
-  }
-
-  .container-from {
-    background: #f1f7fe;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 1em;
-    flex-content: flex-end;
-    position: relative;
-    width: 400px;
-    max-width: 100%;
-    align-item: center;
-  }
-
-  .input-user,
-  .input-email,
-  .input-pass,
-  .input-image {
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-    margin-top: 1em;
-    border: none;
-    outline: none;
-  }
-
-  .btn-register,
-  .btn-login {
-    font-family: "Noto Sans Thai", sans-serif;
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 48%;
-    margin: 0;
-  }
-
-  .btn-register:hover,
-  .btn-login:hover {
+.btn-register:hover,
+.btn-login:hover {
   background-color: #fff;
 }
 
-  .btn-register:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
+.btn-register:active,
+.btn-login:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
 
-  label {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
 
-  .btn-register:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
+@media (min-width: 768px) {
+  .btn-login {
+    min-width: 120px;
+    padding: 0 25px;
   }
+}
 
-  @media (min-width: 768px) {
-    .btn-login {
-      min-width: 120px;
-      padding: 0 25px;
-    }
-  }
-
-  input {
-    border: none;
-    outline: none;
-  }
-
-  button:last-of-type {
-    margin-top: 20px;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 1em;
-  }
+input {
+  border: none;
+  outline: none;
+}
 `;
 
 export default Register;
