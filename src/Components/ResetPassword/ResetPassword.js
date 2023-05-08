@@ -218,16 +218,26 @@ button:last-of-type {
   margin-top: 20px;
 }
 
-.btn-login img {
-    width: 100%;
-    max-width: 50px;
-    text-align: right;
-    position: absolute;
-    bottom: -7px;
-    right: 0;
-    padding: 0;
-    transform: rotate(180deg);
+.btn-login {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
     cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 80%;
+    margin-left: 10%;
   }
 `;
 
