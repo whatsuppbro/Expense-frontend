@@ -159,22 +159,6 @@ align-items: center;
   outline: none;
 }
 
-
-.input-image {
-  background: white;
-  box-shadow: 0 0 2em #e6e9f9;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 20px;
-  color: #4d4d4d;
-  margin-top: 1em;
-  border: none;
-  outline: none;
-}
-
-
 .btn-change {
   font-family: 'Noto Sans Thai', sans-serif;
   background-color: #fbeee0;
