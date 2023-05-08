@@ -95,7 +95,7 @@ function Register({ setIsRegistered, setShowLogin }) {
             </button>
           </form>
           <button className="btn-login" onClick={() => setShowLogin(true)}>
-            <img src={icon} alt="กลับ" />
+            กลับ
           </button>
         </div>
       </div>
