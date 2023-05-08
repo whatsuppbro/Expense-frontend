@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import bg from "../../img/bg.png";
 import logo from "../../img/logo.png";
+import ResetPassword from "../ResetPassword/ResetPassword";
 
 function Login({ setIsLoggedIn, setShowLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showResetPassword, setShowResetPassword] = useState(false);
+
+  if (showResetPassword) {
+    return <ResetPassword setShowResetPassword={setShowResetPassword} />;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +53,7 @@ function Login({ setIsLoggedIn, setShowLogin }) {
       <div className="login-container">
         <div className="login-container2">
           <form className="login-form" onSubmit={handleSubmit}>
-          <img className="login-image" src={logo} alt="เข้าสู่ระบบ" />
+            <img className="login-image" src={logo} alt="เข้าสู่ระบบ" />
 
             <div className="sec-email">
               <input
@@ -71,22 +77,26 @@ function Login({ setIsLoggedIn, setShowLogin }) {
               เข้าสู่ระบบ
             </button>
           </form>
-          <button className="btn-register" onClick={() => setShowLogin(false)}>สมัคร</button>
+          <button className="btn-forgot-password" onClick={() => setShowResetPassword(true)} >
+            ลืมรหัสผ่าน
+          </button>
+          <button className="btn-register" onClick={() => setShowLogin(false)}>
+            สมัคร
+          </button>
         </div>
-        
       </div>
     </LoginStyled>
   );
 }
 
 const LoginStyled = styled.div`
-  font-family: 'Noto Sans Thai', sans-serif;
+  font-family: "Noto Sans Thai", sans-serif;
   height: 100vh;
   background-image: url(${(props) => props.bg});
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 
   .login-image {
     width: 100%;
@@ -96,7 +106,7 @@ const LoginStyled = styled.div`
     margin-right: auto;
   }
 
-  .login-text{
+  .login-text {
     text-align: center;
   }
 
@@ -162,7 +172,7 @@ const LoginStyled = styled.div`
   }
 
   .btn-register {
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: "Noto Sans Thai", sans-serif;
     font-size: 0.8em;
     text-align: right;
     background: none;
@@ -174,14 +184,14 @@ const LoginStyled = styled.div`
     padding: 0;
     cursor: pointer;
   }
-  
+
   .btn-register:hover {
     color: #005f9a;
     text-decoration: underline;
   }
 
   .btn-login {
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: "Noto Sans Thai", sans-serif;
     background-color: #fbeee0;
     border: 2px solid #422800;
     border-radius: 30px;
@@ -201,16 +211,16 @@ const LoginStyled = styled.div`
     width: 80%;
     margin-left: 10%;
   }
-  
+
   .btn-login:hover {
     background-color: #fff;
   }
-  
+
   .btn-login:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
   }
-  
+
   @media (min-width: 768px) {
     .btn-login {
       min-width: 120px;
@@ -218,7 +228,7 @@ const LoginStyled = styled.div`
     }
   }
 
-  input{
+  input {
     border: none;
     outline: none;
   }
@@ -226,7 +236,6 @@ const LoginStyled = styled.div`
   button:last-of-type {
     margin-top: 10px;
   }
-
 `;
 
 export default Login;
