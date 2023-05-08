@@ -7,6 +7,7 @@ import icon from "../../img/previous.png";
 function ResetPassword({ setShowResetPassword, setShowLogin }) {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  const token = localStorage.getItem("token");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
