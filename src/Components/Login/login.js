@@ -209,7 +209,7 @@ const LoginStyled = styled.div`
     cursor: pointer;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: -20px;
   }
   
 
