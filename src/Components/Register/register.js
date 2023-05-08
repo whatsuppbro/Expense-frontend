@@ -210,23 +210,8 @@ const RegisterStyled = styled.div`
     margin: 0;
   }
 
-  .container-from {
-    background: #f1f7fe;
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 2em;
-    flex-content: flex-end;
-    position: relative;
-    width: 500px;
-    max-width: 100%;
-    align-item: center;
-  }
-
-
-  .btn-change:hover,
-  .btn-register:hover {
+  .btn-register:hover,
+  .btn-login:hover {
   background-color: #fff;
 }
 
