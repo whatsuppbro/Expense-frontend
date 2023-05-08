@@ -10,7 +10,12 @@ function Login({ setIsLoggedIn, setShowLogin }) {
   const [showResetPassword, setShowResetPassword] = useState(false);
 
   if (showResetPassword) {
-    return <ResetPassword setShowResetPassword={setShowResetPassword} />;
+    return (
+      <ResetPassword
+        setShowResetPassword={setShowResetPassword}
+        setShowLogin={setShowLogin}
+      />
+    );
   }
 
   const handleSubmit = async (e) => {

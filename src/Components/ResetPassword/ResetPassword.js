@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import bg from "../../img/bg.png";
 import logo from "../../img/logo.png";
 import icon from "../../img/previous.png";
