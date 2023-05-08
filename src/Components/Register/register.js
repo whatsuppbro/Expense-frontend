@@ -116,7 +116,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-.pass-image {
+.register-image {
   width: 100%;
   max-width: 100px;
   display: block;
@@ -124,7 +124,7 @@ align-items: center;
   margin-right: auto;
 }
 
-.pass-text {
+.register-text {
   text-align: center;
 }
 
@@ -134,7 +134,7 @@ align-items: center;
   margin-bottom: 10px;
 }
 
-.pass-sub {
+.register-sub {
   display: flex;
   flex-direction: column;
   justify-content: center;
