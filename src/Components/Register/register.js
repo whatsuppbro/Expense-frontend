@@ -176,7 +176,7 @@ align-items: center;
 .input-image,{
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
