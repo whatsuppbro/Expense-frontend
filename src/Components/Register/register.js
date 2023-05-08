@@ -159,65 +159,27 @@ const RegisterStyled = styled.div`
     align-item: center;
   }
 
-  .input-user {
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-    margin-top: 1em;
-    border: none;
-    outline: none;
-  }
-
-  .input-email {
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-    margin-top: 1em;
-    border: none;
-    outline: none;
-  }
-
-  .input-pass {
-    background: white;
-    box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    border-radius: 20px;
-    color: #4d4d4d;
-    margin-top: 1em;
-    border: none;
-    outline: none;
-  }
-
+  .input-user,
+  .input-email,
+  .input-pass,
   .input-image {
     background: white;
     box-shadow: 0 0 2em #e6e9f9;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
     border-radius: 20px;
     color: #4d4d4d;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     border: none;
     outline: none;
   }
 
   .container-from {
     background: #f1f7fe;
-    padding: 3em;
+    padding: 4em;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
