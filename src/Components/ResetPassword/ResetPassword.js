@@ -231,6 +231,18 @@ input {
 button:last-of-type {
   margin-top: 20px;
 }
+
+.btn-login img {
+    width: 100%;
+    max-width: 50px;
+    text-align: right;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    padding: 0;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
 `;
 
 export default ResetPassword;
