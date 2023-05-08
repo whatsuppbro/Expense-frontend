@@ -20,6 +20,7 @@ function App() {
   const onSignOut = () => {
     localStorage.removeItem("name");
     localStorage.removeItem("avatar");
+    
     setIsLoggedIn(false);
   };
 
