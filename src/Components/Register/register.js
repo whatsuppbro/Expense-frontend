@@ -143,6 +143,8 @@ const RegisterStyled = styled.div`
   .button-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    margin-top: 1em;
   }
 
   .container {
