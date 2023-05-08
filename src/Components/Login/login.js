@@ -27,6 +27,7 @@ function Login({ setIsLoggedIn, setShowLogin }) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
         },
         body: JSON.stringify({
           email,
@@ -191,6 +192,25 @@ const LoginStyled = styled.div`
   }
 
   .btn-register:hover {
+    color: #005f9a;
+    text-decoration: underline;
+  }
+
+  .btn-forgot-password{
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 0.8em;
+    text-align: right;
+    background: none;
+    border: none;
+    color: #111;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .btn-forgot-password:hover {
     color: #005f9a;
     text-decoration: underline;
   }
