@@ -55,7 +55,7 @@ function ResetPassword({ setShowResetPassword, setShowLogin }) {
                 required
               />
             </div>
-            <div>
+            <div className="input-newpassword">
               <input
                 type="input-newpassword"
                 placeholder="รหัสผ่านใหม่"
