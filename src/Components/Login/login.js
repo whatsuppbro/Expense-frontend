@@ -200,12 +200,12 @@ const LoginStyled = styled.div`
   .btn-forgot-password{
     font-family: "Noto Sans Thai", sans-serif;
     font-size: 0.8em;
-    text-align: right;
+    text-align: center;
     background: none;
     border: none;
     color: #111;
     position: absolute;
-    bottom: -7px;
+    bottom: 15px;
     right: 0;
     padding: 0;
     cursor: pointer;
