@@ -217,13 +217,14 @@ const RegisterStyled = styled.div`
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 80%;
-    margin-left: 10%;
+    width: 48%;
+    margin: 0;
   }
 
+  .btn-change:hover,
   .btn-register:hover {
-    background-color: #fff;
-  }
+  background-color: #fff;
+}
 
   .btn-register:active {
     box-shadow: #422800 2px 2px 0 0;
@@ -276,6 +277,13 @@ const RegisterStyled = styled.div`
     touch-action: manipulation;
     width: 80%;
     margin-left: 10%;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 1em;
   }
 `;
 

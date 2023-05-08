@@ -124,6 +124,7 @@ const PassStyled = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    margin-top: 1em;
   }
 
   .pass-container {
