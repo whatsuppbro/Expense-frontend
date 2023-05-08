@@ -149,7 +149,7 @@ align-items: center;
 
 .container {
   background-color: #f1f7fe;
-  padding: 3em;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
