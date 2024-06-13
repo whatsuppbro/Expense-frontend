@@ -2,13 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Ui
-
-![1](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/ed9c8b98-8e64-464c-8d74-82eb3f2f6ee3)
-![2](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/c2cf2c56-a737-4829-97d7-0baccf02a37a)
-![3](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/9e0db09a-d2bd-46bd-ad41-7e6299aa403e)
-![4](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/9f1cd349-3156-4cb4-ad2f-f1ff61bcc421)
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -75,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Ui
+
+![1](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/ed9c8b98-8e64-464c-8d74-82eb3f2f6ee3)
+![2](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/c2cf2c56-a737-4829-97d7-0baccf02a37a)
+![3](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/9e0db09a-d2bd-46bd-ad41-7e6299aa403e)
+![4](https://github.com/whatsuppbro/Expense-frontend/assets/70691473/9f1cd349-3156-4cb4-ad2f-f1ff61bcc421)
